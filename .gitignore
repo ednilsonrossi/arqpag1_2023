@@ -1,3 +1,6 @@
+# Diretory with binaries (named output by vcscode)
+*/output/*
+
 # Prerequisites
 *.d
 
