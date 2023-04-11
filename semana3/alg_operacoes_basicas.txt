@@ -1,0 +1,27 @@
+Desenvolva um algoritmo que calcule as 4 operações aritméticas básicas (+, -, * e /) 
+envolvendo dois números quaisquer. O algoritmo deve apresentar os resultados.
+
+---------------------------------------------------------
+
+Algoritmo
+Declare
+    num_1, num_2 : numérico
+    resultado    : numérico
+
+Início
+    Escreva ("Digite dois números: ")
+    Leia (num_1)
+    Leia (num_2)
+
+    resultado <- num_1 + num_2
+    Escreva("Soma: " + resultado)
+
+    resultado <- num_1 - num_2
+    Escreva("Subtração de " + num_1 + " e " + num_2 + " é igual a " + resultado)
+
+    resultado <- num_1 * num_2
+    Escreva(num_1 + " x " + num_2 + " = " + resultado)
+
+    resultado <- num_1 / num_2
+    Escreva("Divisão: " + resultado)
+Fim
