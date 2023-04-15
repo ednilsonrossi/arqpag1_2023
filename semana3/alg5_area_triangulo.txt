@@ -1,0 +1,14 @@
+Faça um algoritmo que calcula e mostra a área de um triângulo [Área = (base x altura) / 2].
+
+algoritmo
+declare
+    area, base, altura : numérico
+
+Início
+    Escreva("Digite Base e Altura do triângulo: ")
+    Leia(base, altura)
+
+    area <- (base * altura) / 2
+
+    Escreva("ÁREA = " + area)
+Fim

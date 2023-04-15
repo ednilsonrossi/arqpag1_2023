@@ -1,0 +1,22 @@
+Crie  um  algoritmo  que mostre  a  mensagem “Digite os valores de A e B:” e  leia  
+dois  valores numéricos para as  variáveis  A  e B.  O  algoritmo deve  efetuar  a  
+troca dos  valores,  de  forma que a variável  A  passe  a  possuir  o  valor  da  
+variável  B  e  que  a  variável  B  passe  a  possuir  o  valor  da variável A.  
+Os valores trocados devem ser mostrados.
+
+
+Algoritmo
+Declare
+    a, b, troca : numérico
+
+Início
+
+    Escreva("Informe os valores de A e B: ")
+    Leia(a, b);
+
+    troca <- a 
+    a <- b
+    b <- troca
+
+    Escreva("A = " + a + " B = " + b)
+Fim

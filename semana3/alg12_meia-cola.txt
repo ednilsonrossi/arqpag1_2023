@@ -1,0 +1,33 @@
+A  fábrica  de  refrigerantes  Meia-Cola  vende  seu  produto em três formatos: lata  de  350  ml, garrafa de 600 ml 
+e garrafa de 2 litros. Se um comerciante compra uma determinada quantidade de  cada  formato,  faça  um  algoritmo  
+para  calcular  quantos  litros  de  refrigerante  ele  comprou. Devem ser mostradas as mensagens “Digite a qntd de 
+latas de 350 ml: ”, “Digite a qntd de garrafas de 600 ml:”, “Digite a qntd de garrafas de 2 litros: ” e 
+“Litros de refrigerante comprados: ”.
+
+-----------------------------------------------
+
+Algoritmo
+Declare
+    leitura, litros : numérico
+
+Início
+    Escreva("Digite a qntd de latas de 350 ml: ")
+    Leia(leitura)
+    litros <- leitura * 350
+
+    Escreva("Digite a qntd de garrafas de 600 ml:")
+    Leia(leitura)
+    litros <- litros + leitura * 600
+
+    Escreva("Digite a qntd de garrafas de 2 litros: ")
+    Leia(leitura)
+    litros <- litros + leitura * 2000
+
+    //Na variável litros foi armazenana a quantidade de mls comprados pelo comerciante.
+    //Agora é necessário converter mls para Litros.
+
+    litros <- litros / 1000
+
+    Escreva("Litros de refrigerante comprados: " + litros)
+
+Fim

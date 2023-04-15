@@ -1,0 +1,16 @@
+Crie  um  algoritmo  que  leia  um  valor  numérico  e  apresente  na  tela  seus  valores  
+sucessor  e antecessor após as respectivas mensagens “Sucessor: ” e “Antecessor: ”.​
+
+Algoritmo
+Declare
+    valor : numérico
+
+Início
+
+    Escreva("Digite o valor: ")
+    Leia(valor)
+
+    Escreva("Sucessor...: " + (valor + 1) )
+    Escreva("Antecessor.: " + (valor - 1) )
+
+Fim
