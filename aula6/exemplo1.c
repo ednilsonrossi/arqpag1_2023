@@ -1,36 +1,31 @@
 #include <stdio.h>
 
-int eh_par(int arg);
-
 int main(int argc, char const *argv[])
 {
-    int pares, impares, contador, number;
+    int controle;
+    int number;
+    int conta_par, conta_impar;
 
-    //Inicializar os contadores
-    pares = 0;
-    impares = 0;
-    contador = 10;
+    conta_par = 0;
+    conta_impar = 0;
 
-    while(contador >= 1){
-        printf("Digite número: ");
+                                //ESTRUTURA DE REPETIÇÃO DEFINIDA
+    controle = 0;               //INICIALIZAÇÃO
+    while(controle != 10){      //CONDIÇÃO DE PARADA
+        
+        printf("Digite o número: ");
         scanf("%d", &number);
-
-        if(eh_par(number)){
-            pares++;
+        
+        if(number % 2 == 0){
+            conta_par += 1;
         }else{
-            impares++;
+            conta_impar = conta_impar + 1;
         }
 
-        contador--;
+        controle += 1;          //INCREMENTO
     }
 
-    printf("%d são pares\n%d são impares\n\n", pares, impares);
+    printf("Total de pares: %d\nTotal de impares: %d\n\n", conta_par, conta_impar);
 
     return 0;
 }
-
-int eh_par(int arg){
-    return arg % 2 == 0;
-}
-
-

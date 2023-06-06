@@ -2,34 +2,50 @@
 
 int main(int argc, char const *argv[])
 {
-    int n, contador;
-    int lido, maior;
+    int controle;
+    int n;
+    int number;
+    int maior;
 
-    printf("Digite N: ");
+
+    maior = 0;
+    printf("Quantidade de números: ");
     scanf("%d", &n);
 
-    /* 
-    //ALTERNATIVA É LER O MAIOR FORA DA REPETIÇÃO E REMOVER 1 UNIDADE DE N.
-    printf("Digite número: \n");
+    printf("Digite número: ");
     scanf("%d", &maior);
-    */
-    contador = 0;
-    while (contador < n)
-    {
-        printf("Digite número: \n");
-        scanf("%d", &lido);
+    n = n - 1;
+    while (n != 0){
+        printf("Digite número: ");
+        scanf("%d", &number);
 
-        if(contador == 0){
-            maior = lido;
+        if(number > maior){
+            maior = number;
         }
 
-        if(lido > maior){
-            maior = lido;
-        }
-
-        contador++;
+        n = n - 1;
     }
+
+    /*
+    controle = 0;
+    while(controle != n){
+        printf("Digite número: ");
+        scanf("%d", &number);
+
+        if(controle == 0){
+            maior = number;
+        }
+
+        if(number > maior && controle >= 1){
+            maior = number;
+        }
+        controle += 1;
+    }
+    */
     
-    printf("Maior: %d\n\n", maior);
+
+    printf("Maior valor: %d\n\n", maior);
+    
+
     return 0;
 }
