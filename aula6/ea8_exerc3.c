@@ -19,7 +19,7 @@ int main(int argc, char const *argv[]){
         }
 
         calculo += parcial;
-    }
+    }  
 
     printf("%d ^ %d = %d\n\n", base, expoente, calculo);
 
